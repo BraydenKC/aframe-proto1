@@ -12,7 +12,28 @@
                 src="models/Heavy scene (1).glb">
             </a-asset-item>
         </a-assets>
-        <!-- Defining the Camera -->
+
+        <!-- Defining the Player -->
+        <a-entity id="cameraRig">
+            <a-entity
+                id="camera"
+                bind__wasd-controls="endabled: !inVr"
+                position="0 1.6 0.5"
+                camera="far: 10000"
+                look-controls
+                player-height
+                wasd-controls="acceleration: 15">
+            </a-entity>
+        </a-entity>
+
+        <a-entity
+            id="controllerRig"
+            proxy-event="event: recentered; to: #cameraRig; captureBubbles: true; as: recenter">
+        </a-entity>
+
+                
+
+
         <a-gltf-model
             gltf-model="#gun"
             scale="0.01 0.01 0.01"
