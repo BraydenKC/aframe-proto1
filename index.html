@@ -13,8 +13,15 @@
             </a-asset-item>
         </a-assets>
 
+        <!-- Giving us a light source -->
+
+        <a-light
+            type="ambient"
+            color="#445451"
+        ></a-light>
+
         <!-- Defining the Player -->
-        <a-entity id="rig" position="25 10 0">
+        <a-entity id="rig" position="0 1.6 0">
             <a-entity
                 id="camera"
                 camera
@@ -26,11 +33,19 @@
         <a-entity oculus-touch-controls="hand: left"></a-entity>
         <a-entity oculus-touch-controls="hand: right"></a-entity>
 
+        
+        <!-- Putting things into our scene -->
                 
         <a-box
             position="0 0 -0.5"
             color="green">
         </a-box>
+
+        <a-plane
+            rotation="-90 0 0"
+            width="20"
+            height="20">
+        </a-plane>
         <!--
         <a-gltf-model
             gltf-model="#gun"
