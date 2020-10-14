@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script> <!-- These are the AFrame Extras, this lets me use animations -->
+</head>
+
+<body>
+    <a-scene>
+        <a-assets>
+            <a-asset-item
+                id="gun"
+                src="models/Heavy scene (1).glb">
+            </a-asset-item>
+        </a-assets>
+        <!-- Defining the Camera -->
+        <a-gltf-model
+            gltf-model="#gun"
+            scale="0.01 0.01 0.01"
+            position="0 0 -30"
+            animation-mixer= "clip:"
+        > </a-gltf-model>
+    
+
+    </a-scene>
+</body>
