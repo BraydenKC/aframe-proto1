@@ -23,14 +23,12 @@
             </a-entity>
         </a-entity>
 
-        <a-entity
-            id="controllerRig"
-            proxy-event="event: recentered; to: #cameraRig; captureBubbles: true; as: recenter">
-        </a-entity>
+        <a-entity oculus-touch-controls="hand: left"></a-entity>
+        <a-entity oculus-touch-controls="hand: right"></a-entity>
 
                 
         <a-box
-            position="0 0 -3"
+            position="0 0 -0.5"
             color="green">
         </a-box>
         <!--
