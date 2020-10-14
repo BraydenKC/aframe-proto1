@@ -14,15 +14,12 @@
         </a-assets>
 
         <!-- Defining the Player -->
-        <a-entity id="cameraRig">
+        <a-entity id="rig" position="25 10 0">
             <a-entity
                 id="camera"
-                bind__wasd-controls="endabled: !inVr"
-                position="0 1.6 0.5"
-                camera="far: 10000"
+                camera
                 look-controls
-                player-height
-                wasd-controls="acceleration: 15">
+            >
             </a-entity>
         </a-entity>
 
@@ -32,14 +29,18 @@
         </a-entity>
 
                 
-
-
+        <a-box
+            position="0 0 -3"
+            color="green">
+        </a-box>
+        <!--
         <a-gltf-model
             gltf-model="#gun"
             scale="0.01 0.01 0.01"
             position="0 0 -30"
             animation-mixer= "clip:"
         > </a-gltf-model>
+        -->
     
 
     </a-scene>
